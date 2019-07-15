@@ -1,0 +1,9 @@
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import LabelEncoder
+data= pd.read_csv("data.csv")
+print(data.head())
+print(np.shape(data))
+for i in data.head:
+        if data[0][i]=="genres":
+            print(i)
